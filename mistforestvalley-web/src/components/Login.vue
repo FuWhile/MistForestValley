@@ -16,6 +16,7 @@ const username = ref("");
 const password = ref("");
 const errorMessage = ref("");
 const router = useRouter();  // ✅ 获取 router 实例
+console.log("✅ Router 实例:", router); // 确保 router 是存在的
 
 // **📌 检查是否已登录**
 onMounted(() => {
