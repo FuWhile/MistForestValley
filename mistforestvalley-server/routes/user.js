@@ -1,6 +1,6 @@
 const express = require("express");
 const verifyToken = require("../middlewares/authMiddleware");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const db = require("../db"); // 连接数据库
 
 const router = express.Router();
