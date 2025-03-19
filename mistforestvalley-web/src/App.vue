@@ -1,12 +1,7 @@
 <template>
   <div id="app">
     <h1>欢迎回到雾森谷：Mist Forest Valley</h1>
-    <!-- 
-      重要：使用 <router-view /> 来渲染当前路由匹配到的组件。
-      当你访问 / 时，会显示 Login.vue
-      当你访问 /home 时，会显示 Home.vue
-      ...
-    -->
+    <p>当前路由：{{ $route.path }}</p> <!-- 添加显示当前路径 -->
     <router-view />
   </div>
 </template>

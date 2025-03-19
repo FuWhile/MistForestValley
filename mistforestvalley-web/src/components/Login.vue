@@ -39,6 +39,7 @@ const handleLogin = async () => {
     if (response.ok) {
       localStorage.setItem("token", data.token); // ✅ 存储 Token
       errorMessage.value = "";  // 清空错误信息
+      console.log("✅ 登录成功，用户角色：", data.role); // 🌟 这里添加日志
 
       // **📌 判断是否是第一次登录**
       if (data.password_changed === 0) {
