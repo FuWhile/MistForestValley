@@ -32,7 +32,7 @@ const handleLogin = async () => {
     // 如果 Vite 代理失败，尝试直接请求后端
     if (!response.ok) {
       console.warn("⚠️ Vite 代理失败，尝试直接请求后端");
-      response = await fetch("http://localhost:5000/api/login", {
+      response = await fetch("https://mistforestvalley.club/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
